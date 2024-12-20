@@ -117,7 +117,7 @@ function App() {
 
   // Generate stat bar
   const generateStatBar = (stat1, stat2) => (
-    <div className="flex justify-between items-center space-x-4">
+    <div className="flex justify-between items-center space-x-6">
       <div className="flex flex-col items-center">
         <span>{stat1}</span>
         <div className="bg-gray-300 rounded-full w-24 h-2">
@@ -137,7 +137,7 @@ function App() {
   const currentPokemonView = photo.slice(currentIndex, currentIndex + 12).map((pokemon) => (
     <div key={pokemon.id} className="p-4 border border-gray-300 rounded hover:scale-105 transition-transform">
       <img src={pokemon.url} alt={pokemon.name} width={100} />
-      <h3 className="text-lg font-bold">{pokemon.name}</h3>
+      <h3 className="text-xl font-bold">{pokemon.name}</h3>
       {/* <button onClick={() => addFavoritePokemon(pokemon)} className="text-xs text-blue-500">Add to Favorites</button> */}
     </div>
   ));
